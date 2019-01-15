@@ -35,6 +35,10 @@ I want newest messages displayed at the top
 
 ```
 
+### RQUEST/RESPONSE MODEL
+
+[model]!(images/)
+
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
