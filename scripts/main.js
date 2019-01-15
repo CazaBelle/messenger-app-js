@@ -17,11 +17,17 @@ class Message {
 // console.log(written_message);
 // }
 
+submit_button = document.getElementById('submit'); 
+
+submit_button.addEventListener('click', function() { 
+	var message_content = document.getElementById('user_input').value; 
+	console.log(message_content) });
+
 
 function grabInput()
 {
 var written_message = document.getElementById('user_input').value;
-console.log(written_message);
+console.log(written_message.value);
 }
 
 // var text = document.getElementById('user_input').value;
