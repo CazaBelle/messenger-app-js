@@ -1,8 +1,19 @@
-button = document.getElementById('button');
+submit_button = document.getElementById('button'); 
 
-button.addEventListener('click', function() { 
-	var class_test = new Message("Yo bishbish", new Date);
-   	console.log(class_test) });
+submit_button.addEventListener('click', function() { 
+	var message_content = document.getElementById('user_input').value; 
+	var class_test = new Message(message_content, new Date);
+	console.log(class_test) });
+
+
+
+// button = document.getElementById('button');
+
+
+
+// button.addEventListener('click', function() { 
+	
+//    	console.log(class_test) });
 
 class Message {
 	constructor(content, date){
@@ -17,18 +28,14 @@ class Message {
 // console.log(written_message);
 // }
 
-submit_button = document.getElementById('submit'); 
-
-submit_button.addEventListener('click', function() { 
-	var message_content = document.getElementById('user_input').value; 
-	console.log(message_content) });
 
 
-function grabInput()
-{
-var written_message = document.getElementById('user_input').value;
-console.log(written_message.value);
-}
+
+// function grabInput()
+// {
+// var written_message = document.getElementById('user_input').value;
+// console.log(written_message.value);
+// }
 
 // var text = document.getElementById('user_input').value;
 // return text
