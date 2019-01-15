@@ -1,0 +1,1 @@
+document.body.innerText="Hello Other World"
