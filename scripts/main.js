@@ -14,17 +14,16 @@ const handleClick = () => {
 	const grabinput = document.getElementById('user_input').value;
 	const create_message = new Message(grabinput, new Date);
 	arr.push(create_message)
-	const newLi = document.createElement('li');
-	const newContent = document.createTextNode(create_message.content) 
-	newLi.appendChild(newContent);
-	current.appendChild(newLi)
+	displayMessage(create_message);
 		
 	}; 
 
+	const displayMessage = (message) => {
+		const newLi = document.createElement('li');
+		const newContent = document.createTextNode(`${message.content} at ${message.date}`);
+		newLi.appendChild(newContent);
+		current.appendChild(newLi)
+	};
+
 
 submit_button.addEventListener('click', handleClick);
-
-displayMessage 
-//  create_message;
-//  create_elements;
-//  display_elements;
