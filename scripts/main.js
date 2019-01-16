@@ -1,19 +1,6 @@
-submit_button = document.getElementById('button'); 
-
-submit_button.addEventListener('click', function() { 
-	var message_content = document.getElementById('user_input').value; 
-	var class_test = new Message(message_content, new Date);
-	console.log(class_test) });
-
-
-
-// button = document.getElementById('button');
-
-
-
-// button.addEventListener('click', function() { 
-	
-//    	console.log(class_test) });
+arr = [];
+const submit_button = document.getElementById('button'); 
+const current = document.getElementById('list');
 
 class Message {
 	constructor(content, date){
@@ -22,20 +9,22 @@ class Message {
 	}
 }
 
-// function grabInput()
-// {
-// var written_message = document.getElementById("user_input");
-// console.log(written_message);
-// }
+const handleClick = () => {
+
+	const grabinput = document.getElementById('user_input').value;
+	const create_message = new Message(grabinput, new Date);
+	arr.push(create_message)
+	const newLi = document.createElement('li');
+	const newContent = document.createTextNode(create_message.content) 
+	newLi.appendChild(newContent);
+	current.appendChild(newLi)
+		
+	}; 
 
 
+submit_button.addEventListener('click', handleClick);
 
-
-// function grabInput()
-// {
-// var written_message = document.getElementById('user_input').value;
-// console.log(written_message.value);
-// }
-
-// var text = document.getElementById('user_input').value;
-// return text
+displayMessage 
+//  create_message;
+//  create_elements;
+//  display_elements;

@@ -14,6 +14,20 @@ What things you need to install the software and how to install them
 Give examples
 ```
 
+### Requirements
+```
+*Message Board Requirements:*
+
+- User sees a page that has
+   - A title
+   - A form (text box and button)
+   - All the messages with a timestamp in reverse chronological order (newest at the top)
+- User can input text of a message
+- User can click on the button and see the new message at the top of the previous messages
+- The logic of this app should be tested
+- The logic should be encapsulated in classes
+```
+
 ### User Stories 
 ```
 As a user
@@ -37,7 +51,7 @@ I want newest messages displayed at the top
 
 ### RQUEST/RESPONSE MODEL
 
-[model]!(images/)
+[model]!(images/SPA Messenger Model.pdf)
 
 ### Installing
 
@@ -97,7 +111,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Joao** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
