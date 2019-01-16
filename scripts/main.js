@@ -9,10 +9,10 @@ class Message {
 	}
 }
 
-const handleClick = () => {
 
+const handleClick = () => {
 	const grabinput = document.getElementById('user_input').value;
-	const create_message = new Message(grabinput, new Date);
+	const create_message = new Message(grabinput, new Date );
 	arr.push(create_message)
 	displayMessage(create_message);
 		
@@ -20,10 +20,11 @@ const handleClick = () => {
 
 	const displayMessage = (message) => {
 		const newLi = document.createElement('li');
-		const newContent = document.createTextNode(`${message.content} at ${message.date}`);
+		const newContent = document.createTextNode(`${message.content} at ${message.date.toDateString()}`);
 		newLi.appendChild(newContent);
 		current.appendChild(newLi)
 	};
 
+	submit_button.addEventListener('click', handleClick);
 
-submit_button.addEventListener('click', handleClick);
+
