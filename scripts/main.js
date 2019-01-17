@@ -1,26 +1,17 @@
-arr = [];
-const submit_button = document.getElementById('button'); 
-const currentLi = document.getElementById('list');
+var messagelist = new MessageBoard();
+var submit_button = document.getElementById('button'); 
 
-
-
-const handleClick = () => {
+submit_button.addEventListener('click', function () {
 	const grabinput = document.getElementById('user_input').value;
-	const create_message = new Message(grabinput);
-	arr.push(create_message)
-	displayMessage(create_message);
-	}; 
+	const message = new Message(grabinput);
+	// arr.push(create_message)
+	const currentLi = document.getElementById('list');
+	const newLi = document.createElement('li');
+	const text = messagelist.printMessage(message);
+	newLi.appendChild(text);
+	currentLi.appendChild(newLi);
+	
+}); 
 
-	const displayMessage = (message) => {
-		const newLi = document.createElement('li');
-		const newContent = document.createTextNode(`${message.content} at ${message.date}`);
-		// toDateString() this formats date
-		newLi.appendChild(newContent);
-		currentLi.appendChild(newLi)
-	};
-
-	submit_button.addEventListener('click', handleClick);
 
 	// Message List class - display 
-
-
