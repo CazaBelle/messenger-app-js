@@ -2,12 +2,7 @@ arr = [];
 const submit_button = document.getElementById('button'); 
 const currentLi = document.getElementById('list');
 
-class Message {
-	constructor(content, date){
-		this.content = content;
-		this.date = Date();
-	}
-}
+
 
 const handleClick = () => {
 	const grabinput = document.getElementById('user_input').value;
