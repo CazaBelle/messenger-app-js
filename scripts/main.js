@@ -16,8 +16,6 @@ const handleClick = () => {
 	displayMessage(create_message);
 	}; 
 
-	
-
 	const displayMessage = (message) => {
 		const newLi = document.createElement('li');
 		const newContent = document.createTextNode(`${message.content} at ${message.date}`);
@@ -27,5 +25,7 @@ const handleClick = () => {
 	};
 
 	submit_button.addEventListener('click', handleClick);
+
+	// Message List class - display 
 
 
