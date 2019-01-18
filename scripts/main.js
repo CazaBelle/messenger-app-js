@@ -4,8 +4,7 @@ var currentLi = document.getElementById('list');
 
 submit_button.addEventListener('click', function () {
 	const grabinput = document.getElementById('user_input').value;
-	
-	const message = new Message(grabinput);
+	let message = new Message(grabinput);
 	
 	// arr.push(create_message)
 	

@@ -4,7 +4,9 @@ class Message {
 		this.date = date;
 	}
 	
-
+	getPreview() {
+		return this.content.substring(0,20);
+	}
 
 	}
 	// createMessage(input) { 
