@@ -4,12 +4,13 @@ class Message {
 		this.date = date;
 	}
 	
+
+
+	}
 	// createMessage(input) { 
 	// 	var message = new Message(input);
 	// 	return message;
 	// };
 	
-}
-
 // const message = messagelist.createMessage(grabinput);
 

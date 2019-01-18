@@ -1,17 +1,21 @@
-var messagelist = new MessageBoard();
+let messageboard = new MessageBoard();
 var submit_button = document.getElementById('button'); 
+var currentLi = document.getElementById('list');
 
 submit_button.addEventListener('click', function () {
 	const grabinput = document.getElementById('user_input').value;
+	
 	const message = new Message(grabinput);
+	
 	// arr.push(create_message)
-	const currentLi = document.getElementById('list');
-	const newLi = document.createElement('li');
-	const text = messagelist.printMessage(message);
+	
+	var newLi = document.createElement('li');
+	var text = messageboard.printMessage(message);
+
+	console.log(text)
+
 	newLi.appendChild(text);
-	currentLi.appendChild(newLi);
+	currentLi.prepend(newLi);
 	
 }); 
-
-
 	// Message List class - display 
