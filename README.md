@@ -51,7 +51,7 @@ I want newest messages displayed at the top
 
 ### RQUEST/RESPONSE MODEL
 
-[model]!(images/SPA_Messenger_Model.pdf)
+![model](images/SPA_Messenger_Model.pdf)
 
 ### Installing
 
@@ -92,7 +92,7 @@ Give an example
 ```
 
 ## Deployment
-[motivation]!(images/motivational_board.png)
+![motivation](images/motivational_board.png)
 
 Add additional notes about how to deploy this on a live system
 
