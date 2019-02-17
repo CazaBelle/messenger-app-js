@@ -12,10 +12,5 @@ class Message {
 			return this._date.toLocaleDateString();
 		}
 	}
-	// createMessage(input) { 
-	// 	var message = new Message(input);
-	// 	return message;
-	// };
-	
-// const message = messagelist.createMessage(grabinput);
+
 
