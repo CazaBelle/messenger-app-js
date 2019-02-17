@@ -1,18 +1,12 @@
-# Messenger App Javascript
+# Daily Motivations App Javascript
 
-One Paragraph of project description goes here
+A simple web app that allows users to post their daily motivations. 
+
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+* `git clone https://github.com/CazaBelle/messenger-app-js.git`
+* `cd messenger-app-js`
+* ``
 
 ### Requirements
 ```
@@ -45,13 +39,12 @@ I want message displayed with time created
 As a user 
 So I can stay updated on the most recent messages
 I want newest messages displayed at the top 
-
-
 ```
+
 
 ### RQUEST/RESPONSE MODEL
 
-![model](images/SPA_Messenger_Model.pdf)
+![model](images/SPA Messenger Model.pdf)
 
 ### Installing
 
@@ -91,10 +84,19 @@ Explain what these tests test and why
 Give an example
 ```
 
-## Deployment
+Deployment instructions
+-----------------------
+To deploy the project on surge: 
+* Ensure have an updated version of [Node](https://nodejs.org/en/)
+* `npm install --global surge` #installs surge
+* Navigate into project path 
+* `surge` #login or signup with email and password
+* Visit the domain path surge deploy
+
+DEMO
+----
 ![motivation](images/motivational_board.png)
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
