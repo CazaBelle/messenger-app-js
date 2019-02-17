@@ -4,29 +4,8 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Requirements
-```
-*Message Board Requirements:*
-
-- User sees a page that has
-   - A title
-   - A form (text box and button)
-   - All the messages with a timestamp in reverse chronological order (newest at the top)
-- User can input text of a message
-- User can click on the button and see the new message at the top of the previous messages
-- The logic of this app should be tested
-- The logic should be encapsulated in classes
-```
 
 ### User Stories 
 ```
@@ -45,9 +24,23 @@ I want message displayed with time created
 As a user 
 So I can stay updated on the most recent messages
 I want newest messages displayed at the top 
-
-
 ```
+
+### Requirements
+```
+*Message Board Requirements:*
+
+- User sees a page that has
+   - A title
+   - A form (text box and button)
+   - All the messages with a timestamp in reverse chronological order (newest at the top)
+- User can input text of a message
+- User can click on the button and see the new message at the top of the previous messages
+- The logic of this app should be tested
+- The logic should be encapsulated in classes
+```
+
+
 
 ### RQUEST/RESPONSE MODEL
 
